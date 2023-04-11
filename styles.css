@@ -1,0 +1,46 @@
+:root {
+  /* colores globales */
+  --fondo-seccion: #B9A2C7;
+  --fondo-subsec: #F2EBE5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F2EBE5;
+}
+header, main, footer{
+  background-color: #B9A2C7;
+  margin: 10px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* Los <h3> están reservados exclusivamente para los títulos en la sección <main>.
+*/
+h3 {
+  font-size: 0.9em;
+  text-align: center;
+}
+p {
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+.contenedor img {
+  border-radius: 50%;
+}
+
+.contenedor {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: var(--fondo-subsec);
+}
