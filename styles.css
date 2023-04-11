@@ -2,6 +2,7 @@
   /* colores globales */
   --fondo-seccion: #B9A2C7;
   --fondo-subsec: #F2EBE5;
+  --fondo-sec-vid: #DCE3D1;
 }
 * {
   margin: 0;
@@ -34,19 +35,44 @@ header img {
   border-radius: 50%;
 }
 
+div a img {
+  border-radius: 50%;
+  width: 50px;
+}
+
 .contenedor img {
   border-radius: 50%;
 }
 
-.contenedor {
+.contenedor, .contenedor-video {
   padding: 10px;
   margin: 10px;
   display: flex;
-  /*flex-wrap: wrap;*/
   border-radius: 10px;
-  background-color: var(--fondo-subsec);
+  
+  align-items: center;
   gap: 20px;
 }
+
+.contenedor {
+  background-color: var(--fondo-subsec);
+}
+
+.contenedor-video {
+  display: flex;
+  background-color: var(--fondo-sec-vid);
+  width: 75%;
+  align-content: center;
+}
+
 .destacado {
   font-weight: bold;
+}
+
+.icono {
+  align-content: center;
+}
+
+.leyenda {
+  font-size: 0.4em;
 }
