@@ -14,19 +14,20 @@ body {
 header, main, footer{
   background-color: #B9A2C7;
   margin: 10px;
-  height: 150px;
+  /* height: 150px; */
   border-radius: 10px;
   padding: 10px;
 }
 /* Los <h3> están reservados exclusivamente para los títulos en la sección <main>.
 */
 h3 {
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-align: center;
 }
 p {
-  font-size: 0.8em;
+  font-size: 0.65em;
   text-align: justify;
+  margin: 5px;
 }
 
 header img {
@@ -39,8 +40,13 @@ header img {
 
 .contenedor {
   padding: 10px;
+  margin: 10px;
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   border-radius: 10px;
   background-color: var(--fondo-subsec);
+  gap: 20px;
+}
+.destacado {
+  font-weight: bold;
 }
