@@ -3,6 +3,7 @@
   --fondo-seccion: #B9A2C7;
   --fondo-subsec: #F2EBE5;
   --fondo-sec-vid: #DCE3D1;
+  --fondo-sec-den: #FBDFF0;
 }
 * {
   margin: 0;
@@ -15,7 +16,6 @@ body {
 header, main, footer{
   background-color: #B9A2C7;
   margin: 10px;
-  /* height: 150px; */
   border-radius: 10px;
   padding: 10px;
 }
@@ -44,12 +44,11 @@ div a img {
   border-radius: 50%;
 }
 
-.contenedor, .contenedor-video {
+.contenedor {
   padding: 10px;
   margin: 10px;
   display: flex;
   border-radius: 10px;
-  
   align-items: center;
   gap: 20px;
 }
@@ -58,12 +57,24 @@ div a img {
   background-color: var(--fondo-subsec);
 }
 
-.contenedor-video {
+.contenedor-video, .contenedor-denuncia {
   display: flex;
+  padding: 5px;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 10px;
+  align-items: center;
+} 
+
+.contenedor-video {
   background-color: var(--fondo-sec-vid);
-  width: 75%;
-  align-content: center;
 }
+
+.contenedor-denuncia {
+  background-color: var(--fondo-sec-den);
+}
+
 
 .destacado {
   font-weight: bold;
@@ -75,4 +86,18 @@ div a img {
 
 .leyenda {
   font-size: 0.4em;
+}
+
+.contenedor-video img, .contenedor-denuncia img {
+  width: 35px;
+}
+
+.detalle {
+  width: 100%;
+  text-align: center;
+}
+
+.detalle p {
+  font-size: 0.6em;
+  text-align: center;
 }
