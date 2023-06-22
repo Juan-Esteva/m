@@ -101,3 +101,12 @@ div a img {
   font-size: 0.6em;
   text-align: center;
 }
+
+header {
+  display: flex;
+}
+.main-title {
+  font-size: 5em;
+  text-align: center;
+  margin-left: 80%;
+}
